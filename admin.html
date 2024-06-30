@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Admin</title>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Admin - Create New Post</h1>
+      <form id="postForm" class="bg-white p-6 rounded-lg shadow-md">
+        <div class="mb-4">
+          <label for="title" class="block text-gray-700 font-bold mb-2"
+            >Title</label
+          >
+          <input
+            type="text"
+            id="title"
+            class="w-full p-2 border border-gray-300 rounded"
+            placeholder="Title"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="content" class="block text-gray-700 font-bold mb-2"
+            >Content</label
+          >
+          <textarea
+            id="content"
+            class="w-full p-2 border border-gray-300 rounded"
+            placeholder="Content"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="image" class="block text-gray-700 font-bold mb-2"
+            >Image</label
+          >
+          <input
+            type="file"
+            id="image"
+            class="w-full p-2 border border-gray-300 rounded"
+            accept="image/*"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Post
+        </button>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

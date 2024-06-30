@@ -558,16 +558,17 @@
       </div>
     </footer>
 
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
     <script type="text/javascript">
-      function add_chatinline() {
+      function add_chatwidget() {
         var hccid = 57014891
         var nt = document.createElement("script")
         nt.async = true
-        nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid
+        nt.src = "https://mylivechat.com/chatwidget.aspx?hccid=" + hccid
         var ct = document.getElementsByTagName("script")[0]
         ct.parentNode.insertBefore(nt, ct)
       }
-      add_chatinline()
+      add_chatwidget()
     </script>
     <script src="./themechecker.js"></script>
     <script src="./themeswitcher.js"></script>
